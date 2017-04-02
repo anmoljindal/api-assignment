@@ -19,9 +19,9 @@ To run
  
  to make GET request for request function via cURL 
  
- curl -i -H "Accept: application/json" -H "Content-Type: application/json" http://localhost:8000/api/request?connid=<connection id>&timeout=<timeout>
+ curl -i -H "Accept: application/json" -H "Content-Type: application/json" http://localhost:8000/api/request?connid='connection id'&timeout='timeout'
  
- replace <connection id> with connection id for the request thread and <timeout> with timeout time in seconds
+ replace 'connection id' with connection id for the request thread and 'timeout' with timeout time in seconds
 
 to make GET request for serverStatus cia cURL
  
@@ -29,6 +29,6 @@ to make GET request for serverStatus cia cURL
 
 to make POST request for kill cia cURL
  
- curl --data "connid=<onnection id>" 127.0.0.1:8000/api/kill
+ curl --data "connid='connection id'" 127.0.0.1:8000/api/kill
  
- replace <connection id> with connection id for the request thread
+ replace 'connection id' with connection id for the request thread
